@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#fff"
+android:orientation="vertical"
+android:padding="50dp"
+android:paddingBottom="100dp"
+android:paddingTop="100dp"
+tools:context="com.example.harshbhut42.error_404.list_view_appointment"
+android:weightSum="1">
+
+<ListView
+    android:id="@+id/list"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+</ListView>
+</LinearLayout>

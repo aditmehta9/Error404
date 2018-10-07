@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notice">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/activity_notice_toolbar"/>
+
+
+    <TextView
+        android:id="@+id/activity_notice_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_notice_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Notice for Student and Parent"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/activity_notice_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_notice_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:hint="Subject..."
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/holo_blue_light" />
+
+    <EditText
+        android:id="@+id/activity_notice_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/activity_notice_subject"
+        android:layout_below="@+id/activity_notice_subject"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Body..."
+        android:inputType="textMultiLine"
+        android:textColorHint="@android:color/holo_blue_bright" />
+
+    <Button
+        android:id="@+id/activity_notice_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_notice_body"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Send"
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>

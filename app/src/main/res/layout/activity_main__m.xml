@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_M">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/activity_main_m_toolbar"/>
+
+    <Button
+        android:id="@+id/activity_main_m_groupChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_m_toolbar"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFF4081"
+        android:text="Group Chat"
+        android:textColor="#fff"
+        android:padding="7dp"
+        android:layout_marginTop="85dp" />
+
+    <Button
+        android:id="@+id/activity_main_m_groupEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_m_groupChat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:background="#FFFF4081"
+        android:padding="7dp"
+        android:text="Group Email"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/activity_main_m_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_m_groupEmail"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFF4081"
+        android:layout_marginTop="68dp"
+        android:padding="7dp"
+        android:text="Email"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/activity_main_m_sendGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_m_email"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFF4081"
+        android:layout_marginTop="60dp"
+        android:padding="7dp"
+        android:text="Send Grade"
+        android:textColor="#fff" />
+
+
+
+</RelativeLayout>

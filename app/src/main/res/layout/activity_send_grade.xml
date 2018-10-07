@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".send_grade">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/activity_send_grade_toolbar"/>
+
+
+    <Button
+        android:id="@+id/activity_send_grade_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="71dp"
+        android:background="@android:color/holo_orange_light"
+        android:shadowColor="@android:color/holo_red_dark"
+        android:text="Send Grade"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"/>
+
+    <EditText
+        android:id="@+id/activity_send_grade_rollno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_send_grade_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Enter Roll No..."
+        android:inputType="number"
+        android:textColor="@android:color/holo_green_light" />
+
+    <TextView
+        android:id="@+id/activity_send_grade_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_send_grade_toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="0dp"
+        android:text="Enter Grades to send Email to parents and student"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/activity_send_grade_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/activity_send_grade_rollno"
+        android:layout_below="@+id/activity_send_grade_rollno"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:hint="Enter Grade..."
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_green_light"
+        tools:ignore="UnknownId" />
+
+
+
+</RelativeLayout>

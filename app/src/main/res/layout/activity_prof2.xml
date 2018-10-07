@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harshbhut42.error_404.Prof2">
+
+    <TextView
+        android:id="@+id/activity_prof2_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:textSize="22dp"
+        android:text="Appointment Prof2"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/activity_prof2_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_prof2_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/activity_prof2_editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/activity_prof2_editText"
+        android:layout_below="@+id/activity_prof2_editText"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/activity_prof2_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_prof2_editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Send"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/buttonTextColor"/>
+</RelativeLayout>
